@@ -1,5 +1,6 @@
 {
   "files.associations": {
-    "hellow_world.C": "cpp"
+    "hellow_world.C": "cpp",
+    "main.C": "cpp"
   }
 }
