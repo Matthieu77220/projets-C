@@ -14,10 +14,8 @@ int main(void){
     scanf("%d", &userChoice);
     if(userChoice > 10){
       printf("Too high ! choose a number between 0 and 10:\n");
-      scanf("%d", &userChoice);
     }else if (userChoice < 0){
-      printf("Too low ! choose a number between 0 and 10:\n");
-      scanf("%d", &userChoice);
+      printf("Too low ! choose a number between 0 and 10:\n"); 
     }else{
       printf("You choose: %d\n", userChoice);
     }
