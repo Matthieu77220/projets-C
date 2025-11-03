@@ -32,7 +32,7 @@ int main(void){
             break;
             }
 
-        printf("write Q to quit pr R to resume (maj+Q or R)\n");
+        printf("write Q to quit or R to resume (maj+Q or R)\n");
         scanf(" %c", &isRunning);
         if(isRunning == 'Q' ){
             printf("END.");
