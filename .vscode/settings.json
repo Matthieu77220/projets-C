@@ -1,8 +1,0 @@
-{
-  "files.associations": {
-    "*.embeddedhtml": "html",
-    "hellow_world.C": "cpp",
-    "main.C": "cpp",
-    "hello_world.C": "cpp"
-  }
-}
