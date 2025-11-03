@@ -1,1 +1,4 @@
-.env
+.vscode
+main.exe
+hello_world.exe
+calculator.exe
