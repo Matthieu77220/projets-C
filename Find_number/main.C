@@ -4,21 +4,27 @@
 
 int main(void){
 
-    srand(time(NULL));
+  srand(time(NULL));
 
-    int computerChoice = rand() % 101;
+  int computerChoice = rand() % 11;
+  int userChoice;
 
-    int userChoice;
-
-    printf("type a number between 0 and 100: \n");
-    scanf("%d", userChoice);
-    printf("You've choose: %d \n", userChoice);
-
-    if(&computerChoice == &userChoice){
-      printf("You've succefuly found the computer number. GG!");
-    } else{
-      printf("You didn't found the number of the computer. Try again !");
+  do{
+    printf("type a number between 0 and 10:\n");
+    scanf("%d", &userChoice);
+    if(userChoice > 10){
+      printf("Too high ! choose a number between 0 and 10:\n");
+      scanf("%d", &userChoice);
+    }else if (userChoice < 0){
+      printf("Too low ! choose a number between 0 and 10:\n");
+      scanf("%d", &userChoice);
+    }else{
+      printf("You choose: %d\n", userChoice);
     }
+  } 
+  while(computerChoice!=userChoice);
+
+  printf("You won !");
 
     return(0);
 }
