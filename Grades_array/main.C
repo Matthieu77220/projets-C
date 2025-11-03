@@ -6,10 +6,12 @@ int main(void){
     int nbGrades = 0;
     int i = 0;
     int j = 0;
+    int g = 0;
     float grades[30];
     float sum;
     float avg;
-
+    float max = grades[0];
+    float min = grades[0];
 
 
     printf("How many student(s) do you have ? :\n");
@@ -37,6 +39,11 @@ int main(void){
     avg = sum / nbGrades;
     
     printf("\nGrades averrage : %f", avg);
+
+
+    for(g; g<nbStudents; g++){
+        if(grades[g] > max)
+    }
 
     return(0);
 }
