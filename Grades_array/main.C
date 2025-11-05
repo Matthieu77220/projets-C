@@ -7,12 +7,10 @@ int main(void){
     int i = 0;
     int j = 0;
     int g = 0;
+    int k = 0;
     float grades[30];
     float sum;
     float avg;
-    float max = grades[0];
-    float min = grades[0];
-
 
     printf("How many student(s) do you have ? :\n");
     scanf("%d", &nbStudents);
@@ -29,8 +27,11 @@ int main(void){
     }
 
     for(i; i<nbStudents; i++){
-        printf("All grades: %f", grades[i]);
+        printf("grades: %f\n", grades[i]);
     }
+
+    float max = grades[0];
+    float min = grades[0];
     
     for(j; j<nbStudents; j++){
         sum += grades[j];
@@ -42,8 +43,18 @@ int main(void){
 
 
     for(g; g<nbStudents; g++){
-        if(grades[g] > max)
+        if(grades[g] > max){
+            max = grades[g];       
+        }
     }
+    printf("\nThe maximum grade is: %f", max);
+
+    for(k; k<nbStudents; k++){
+        if(grades[k] < min){
+            min = grades[k];
+        }
+    } 
+    printf("\nThe minimum grade is %f", min);
 
     return(0);
 }
